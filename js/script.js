@@ -3,8 +3,8 @@ $(document).ready(function() {
     var square = $("#template > div").clone();
     $("#container").append(square);
   }
-  $(document).on("click", function(event) {
-    if ($(event.target).parent("#container").hasClass("container") && $(event.target).text() == "") {
+  $(document).on("click", "#container",function(event) {
+    if ($(event.target).text() == "") {
       $.ajax({
           url: "https://flynn.boolean.careers/exercises/api/random/int",
           method: "GET",
