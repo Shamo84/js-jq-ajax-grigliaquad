@@ -37,3 +37,6 @@ body {
 .yellow {
   background-color: yellow;
 }
+.display-none {
+  display: none;
+}

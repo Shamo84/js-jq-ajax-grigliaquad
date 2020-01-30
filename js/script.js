@@ -1,4 +1,8 @@
 $(document).ready(function() {
+  for (var i = 0; i < 36; i++) {
+    var square = $("#template > div").clone();
+    $("#container").append(square);
+  }
   $(document).on("click", function(event) {
     if ($(event.target).parent("#container").hasClass("container") && $(event.target).text() == "") {
       $.ajax({
